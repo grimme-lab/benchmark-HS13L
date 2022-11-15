@@ -1,5 +1,5 @@
 HS13L-Benchmark-Set:
-This archive contains the coordinates for the HS13L and HS13L-CI (with counterions for complexes 10-13) benchmark test set. 
+This archive contains the coordinates for the HS13L and HS13L-CI (with counterions for complexes 10-13) benchmark test sets. 
 They are provided in the following way:
 
 The coordinates are provided in the Turbomole format in atomic units and in xyz format.
