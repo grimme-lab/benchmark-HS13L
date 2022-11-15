@@ -11,6 +11,7 @@ for HS13L and HS13L-CI:
 .reshs13lccref
 
 .reshs13lciccref
+
 2. Experimental reference values:   backcorrected experimental values at GmRRHO(GFN2[ALPB])-SPH+Gsolv(COSMO-RS16-normal)//r2scan-3c[SMD] level in kcal/mol
 for HS13L and HS13L-CI:
 
