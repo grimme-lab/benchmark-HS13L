@@ -1,0 +1,30 @@
+# This archive contains the coordinates for the HS13L benchmark test set. 
+# They are provided in the following way:
+#
+# The coordinates are provided in the Turbomole format in atomic units and in xyz format.
+# The respective charges are provided in the .CHRG and an .ORCACHRG file in the respective folder.
+#Reference values:  “DLPNO-CCSD(T1)/CBS" (see orignial publication for details) in kcal/mol 
+
+
+if [ "$TMER" == "" ]
+then
+  tmer=tmer2++
+else
+  tmer=$TMER
+fi
+f=$1
+w=$2
+
+$tmer 1_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -21.56
+$tmer 2_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -31.71                     
+$tmer 3_{AB,A,B}/$f	      x	 1	-1	-1	$w	 missing #    take PWPB95-D4 (-45.37) or experimental back-corrected value  (-32.68) instead                     
+$tmer 4_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -24.07                     
+$tmer 5_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -10.94                     
+$tmer 6_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -31.48                     
+$tmer 7_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -42.90                     
+$tmer 8_{AB,A,B}/$f	      x	 1	-1	-1	$w	 -21.62                     
+$tmer 9_{AB,B}/$f 8_A/$f  x	 1	-1	-1	$w	 -23.72
+$tmer 10_{AB,B}/$f 1_A/$f x	 1	-1	-1	$w	 -167.59     
+$tmer 11_{AB,A,B}/$f	  x	 1	-1	-1	$w	 -73.75                        
+$tmer 12_{AB,A,B}/$f	  x	 1	-1	-1	$w	 -54.46                        
+$tmer 13_{AB,A,B}/$f	  x	 1	-1	-1	$w	 -62.83                                                                                                            

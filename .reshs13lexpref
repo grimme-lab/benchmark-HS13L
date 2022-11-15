@@ -1,0 +1,30 @@
+# This archive contains the coordinates for the HS13L benchmark test set. 
+# They are provided in the following way:
+#
+# The coordinates are provided in the Turbomole format in atomic units and in xyz format.
+# The respective charges are provided in the .CHRG and an .ORCACHRG file in the respective folder.
+#Reference values:   backcorrected experimental values at GmRRHO(GFN2[ALPB])-SPH+Gsolv(COSMO-RS16-normal)//r2scan-3c[SMD] level in kcal/mol
+
+
+if [ "$TMER" == "" ]
+then
+  tmer=tmer2++
+else
+  tmer=$TMER
+fi
+f=$1
+w=$2
+
+$tmer 1_{AB,A,B}/$f	x	1	-1	-1	$w	-18.4
+$tmer 2_{AB,A,B}/$f	x	1	-1	-1	$w	-31.6
+$tmer 3_{AB,A,B}/$f	x	1	-1	-1	$w	-32.7
+$tmer 4_{AB,A,B}/$f	x	1	-1	-1	$w	-23.9
+$tmer 5_{AB,A,B}/$f	x	1	-1	-1	$w	-10.7
+$tmer 6_{AB,A,B}/$f	x	1	-1	-1	$w	-31
+$tmer 7_{AB,A,B}/$f	x	1	-1	-1	$w	-36.5  
+$tmer 8_{AB,A,B}/$f	x	1	-1	-1	$w	-21.5
+$tmer 9_{AB,B}/$f	8_A/$f	x	1	-1	-1	$w	-23.5
+$tmer 10_{AB,B}/$f	1_A/$f	x	1	-1	-1	$w	-169.3
+$tmer 11_{AB,A,B}/$f	x	1	-1	-1	$w	-65.5
+$tmer 12_{AB,A,B}/$f	x	1	-1	-1	$w	-62.8
+$tmer 13_{AB,A,B}/$f	x	1	-1	-1	$w	-68.2
